@@ -9,5 +9,6 @@
     <Import_RootNamespace>AppStoreLink.Shared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AppStoreLinkService.cs" />
   </ItemGroup>
 </Project>

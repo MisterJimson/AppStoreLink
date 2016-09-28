@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Mj.AppStoreLink;
 using Xamarin.Forms;
 
 namespace SampleApp
@@ -12,6 +9,11 @@ namespace SampleApp
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        private void Button_OnClicked(object sender, EventArgs e)
+        {
+            AppStoreLinkService.Instance.OpenAppStorePage("com.google.android.googlequicksearchbox", null);
         }
     }
 }

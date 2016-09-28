@@ -121,6 +121,10 @@
     <AndroidResource Include="Resources\values\styles.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\AppStoreLink.Android\AppStoreLink.Android.csproj">
+      <Project>{78ba2882-2d15-4673-bfbc-bc9df3dee147}</Project>
+      <Name>AppStoreLink.Android</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SampleApp\SampleApp.csproj">
       <Project>{eb645087-9262-47c2-872a-e86f1e06be2e}</Project>
       <Name>SampleApp</Name>

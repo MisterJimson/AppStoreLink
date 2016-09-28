@@ -40,6 +40,7 @@
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppStoreLink.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -48,5 +49,6 @@
       <Name>AppStoreLink.Interface</Name>
     </ProjectReference>
   </ItemGroup>
+  <Import Project="..\AppStoreLink.Shared\AppStoreLink.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

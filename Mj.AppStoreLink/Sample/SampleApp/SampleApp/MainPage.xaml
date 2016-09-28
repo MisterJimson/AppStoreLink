@@ -4,8 +4,9 @@
              xmlns:local="clr-namespace:SampleApp"
              x:Class="SampleApp.MainPage">
 
-  <Label Text="Welcome to Xamarin Forms!"
-           VerticalOptions="Center"
-           HorizontalOptions="Center" />
+  <Button Clicked="Button_OnClicked"
+          Text="Goto App Store!"
+          VerticalOptions="Center"
+          HorizontalOptions="Center"/>
 
 </ContentPage>

@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AppStoreLink
+﻿namespace Mj.AppStoreLink
 {
     public interface IAppStoreLink
     {
+        void OpenAppStorePage(string androidPackageName, string iTunesAppUrl);
     }
 }

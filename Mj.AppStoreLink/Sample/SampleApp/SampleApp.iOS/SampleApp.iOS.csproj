@@ -138,6 +138,12 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\AppStoreLink.iOS\AppStoreLink.iOS.csproj">
+      <Project>{05a3951a-4a50-47c0-97cc-adcc729ecf34}</Project>
+      <Name>AppStoreLink.iOS</Name>
+      <IsAppExtension>false</IsAppExtension>
+      <IsWatchApp>false</IsWatchApp>
+    </ProjectReference>
     <ProjectReference Include="..\SampleApp\SampleApp.csproj">
       <Project>{eb645087-9262-47c2-872a-e86f1e06be2e}</Project>
       <Name>SampleApp</Name>

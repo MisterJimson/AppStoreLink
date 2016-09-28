@@ -29,7 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleApp.Windows", "Sample
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		AppStoreLink.Shared\AppStoreLink.Shared.projitems*{05a3951a-4a50-47c0-97cc-adcc729ecf34}*SharedItemsImports = 4
+		AppStoreLink.Shared\AppStoreLink.Shared.projitems*{43f87809-a76e-4429-b342-fbb456ce8e65}*SharedItemsImports = 4
 		AppStoreLink.Shared\AppStoreLink.Shared.projitems*{5ad31cae-c1eb-4f59-af28-5f6ad42303f6}*SharedItemsImports = 13
+		AppStoreLink.Shared\AppStoreLink.Shared.projitems*{78ba2882-2d15-4673-bfbc-bc9df3dee147}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
