@@ -47,12 +47,6 @@
     <Compile Include="Resources\Resource.Designer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\AboutResources.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\Values\Strings.xml" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\AppStoreLink.Interface\AppStoreLink.Interface.csproj">
       <Project>{0de81f76-3b35-4208-ae99-7711c0b2e66d}</Project>
       <Name>AppStoreLink.Interface</Name>
