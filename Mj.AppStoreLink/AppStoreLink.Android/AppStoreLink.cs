@@ -15,17 +15,21 @@ namespace Mj.AppStoreLink
 
         private void OpenAppPage(string packageName)
         {
+            string url;
+
             try
             {
-                Application.Context.StartActivity(new Intent(Intent.ActionView,
-                    Uri.Parse("market://details?id=" + packageName)));
+                Application.Context.PackageManager.GetPackageInfo("com.android.vending", 0);
+                url = "market://details?id=" + packageName;
             }
             catch (Exception e)
             {
-                Application.Context.StartActivity(new Intent(Intent.ActionView,
-                    Uri.Parse("https://play.google.com/store/apps/details?id=" + packageName)));
-
+                url = "https://play.google.com/store/apps/details?id=" + packageName;
             }
+
+            Intent intent = new Intent(Intent.ActionView, Uri.Parse(url));
+            intent.AddFlags(ActivityFlags.NewTask | ActivityFlags.ClearWhenTaskReset);
+            Application.Context.StartActivity(intent);
         }
     }
 }
