@@ -2,6 +2,6 @@
 {
     public interface IAppStoreLink
     {
-        void OpenAppStorePage(string androidPackageName, string iTunesAppUrl);
+        void OpenAppStorePage(string androidPackageName, string iTunesId);
     }
 }

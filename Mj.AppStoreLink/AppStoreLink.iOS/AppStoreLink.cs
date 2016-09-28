@@ -7,14 +7,14 @@ namespace Mj.AppStoreLink
 {
     public class AppStoreLink : IAppStoreLink
     {
-        public void OpenAppStorePage(string androidPackageName, string iTunesAppUrl)
+        public void OpenAppStorePage(string androidPackageName, string iTunesId)
         {
-            OpenAppPage(iTunesAppUrl);
+            OpenAppPage(iTunesId);
         }
 
-        private void OpenAppPage(string iTunesAppUrl)
+        private void OpenAppPage(string iTunesId)
         {
-            NSUrl appUrl = new NSUrl(iTunesAppUrl);
+			NSUrl appUrl = new NSUrl($"itms-apps://itunes.apple.com/app/{iTunesId}");
 
             if (UIApplication.SharedApplication.CanOpenUrl(appUrl))
             {

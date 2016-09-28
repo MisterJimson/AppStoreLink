@@ -8,7 +8,7 @@ namespace Mj.AppStoreLink
 {
     public class AppStoreLink : IAppStoreLink
     {
-        public void OpenAppStorePage(string androidPackageName, string iTunesAppUrl)
+        public void OpenAppStorePage(string androidPackageName, string iTunesId)
         {
             OpenAppPage(androidPackageName);
         }
