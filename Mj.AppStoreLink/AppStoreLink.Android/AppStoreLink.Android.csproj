@@ -45,7 +45,6 @@
   <ItemGroup>
     <Compile Include="AppStoreLink.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -58,6 +57,9 @@
       <Project>{0de81f76-3b35-4208-ae99-7711c0b2e66d}</Project>
       <Name>AppStoreLink.Interface</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
   </ItemGroup>
   <Import Project="..\AppStoreLink.Shared\AppStoreLink.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
