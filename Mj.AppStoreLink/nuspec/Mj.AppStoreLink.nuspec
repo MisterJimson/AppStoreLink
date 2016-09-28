@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Mj.AppStoreLink</id>
+    <version>1.0.0</version>
+    <title>Mj.AppStoreLink</title>
+    <summary>Easy way to link to the App Store or Play Store for an app</summary>
+    <description>
+      Easy way to link to the App Store or Play Store for an app
+    </description>
+    <authors>Jason Rai</authors>
+    <owners>Jason Rai</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+  <files>
+    <!-- PCL -->
+    <file src="..\AppStoreLink\bin\Release\Mj.AppStoreLink.*" 
+          target="lib\portable-win+net45+wp8+win8+wpa81" />
+
+    <!-- android -->
+    <file src="..\AppStoreLink.Android\bin\Release\Mj.AppStoreLink.*" 
+          target="lib\MonoAndroid10" />
+
+    <!-- ios -->
+    <file src="..\AppStoreLink.iOS\bin\Release\Mj.AppStoreLink.*" 
+          target="lib\Xamarin.iOS10" />
+  </files>
+</package>

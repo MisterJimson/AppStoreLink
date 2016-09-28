@@ -72,13 +72,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\AppStoreLink\AppStoreLink.csproj">
-      <Project>{43f87809-a76e-4429-b342-fbb456ce8e65}</Project>
-      <Name>AppStoreLink</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\..\AppStoreLink.Interface\AppStoreLink.Interface.csproj">
       <Project>{0de81f76-3b35-4208-ae99-7711c0b2e66d}</Project>
       <Name>AppStoreLink.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\AppStoreLink\AppStoreLink.csproj">
+      <Project>{43f87809-a76e-4429-b342-fbb456ce8e65}</Project>
+      <Name>AppStoreLink</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

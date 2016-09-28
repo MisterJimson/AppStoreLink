@@ -34,16 +34,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <!-- A reference to the entire .NET Framework is automatically included -->
-    <ProjectReference Include="..\Mj.AppStoreLink\AppStoreLink.Interface\AppStoreLink.Interface.csproj">
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppStoreLink.Interface\AppStoreLink.Interface.csproj">
       <Project>{0de81f76-3b35-4208-ae99-7711c0b2e66d}</Project>
       <Name>AppStoreLink.Interface</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <Import Project="..\Mj.AppStoreLink\AppStoreLink.Shared\AppStoreLink.Shared.projitems" Label="Shared" />
+  <Import Project="..\AppStoreLink.Shared\AppStoreLink.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
