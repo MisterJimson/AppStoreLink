@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Mj.AppStoreLink</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>Mj.AppStoreLink</title>
     <summary>Easy way to link to the App Store or Play Store for an app</summary>
     <description>
