@@ -14,7 +14,8 @@ namespace SampleApp
         private void Button_OnClicked(object sender, EventArgs e)
         {
             AppStoreLinkService.Instance.OpenAppStorePage("com.google.android.googlequicksearchbox", 
-			                                              "itms-apps://itunes.apple.com/app/id585027354");
+			                                              "itms-apps://itunes.apple.com/app/id585027354",
+                                                          "9wzdncrfj2gk");
         }
     }
 }
