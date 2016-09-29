@@ -8,13 +8,16 @@ namespace Mj.AppStoreLink
 {
     public class AppStoreLink : IAppStoreLink
     {
-        public void OpenAppStorePage(string androidPackageName, string iTunesId)
+        public void OpenAppStorePage(string androidPackageName, string iTunesId, string windowsStoreId = null)
         {
             OpenAppPage(androidPackageName);
         }
 
         private void OpenAppPage(string packageName)
         {
+            if (string.IsNullOrEmpty(packageName))
+                return;
+
             string url;
 
             try
