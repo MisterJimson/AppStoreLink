@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Mj.AppStoreLink</id>
-    <version>1.1.0</version>
+    <version>1.1.1</version>
     <title>Mj.AppStoreLink</title>
     <summary>Simple cross platform librray that lets you link to the native store app on Android, iOS and UWP</summary>
     <description>
