@@ -2,11 +2,11 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Mj.AppStoreLink</id>
-    <version>1.0.1</version>
+    <version>1.1.0</version>
     <title>Mj.AppStoreLink</title>
-    <summary>Easy way to link to the App Store or Play Store for an app</summary>
+    <summary>Simple cross platform librray that lets you link to the native store app on Android, iOS and UWP</summary>
     <description>
-      Easy way to link to the App Store or Play Store for an app
+      Simple cross platform librray that lets you link to the native store app on Android, iOS and UWP
     </description>
     <authors>Jason Rai</authors>
     <owners>Jason Rai</owners>
@@ -24,5 +24,9 @@
     <!-- ios -->
     <file src="..\AppStoreLink.iOS\bin\Release\Mj.AppStoreLink.*" 
           target="lib\Xamarin.iOS10" />
+
+    <!-- UWP -->
+    <file src="..\AppStoreLink.UWP\bin\Release\Mj.AppStoreLink.*"
+          target="lib\uap10.0" />
   </files>
 </package>
