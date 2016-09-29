@@ -17,7 +17,7 @@ namespace Mj.AppStoreLink
             if (string.IsNullOrEmpty(iTunesId))
                 return;
 
-			NSUrl appUrl = new NSUrl($"itms-apps://itunes.apple.com/app/{iTunesId}");
+			NSUrl appUrl = new NSUrl($"itms-apps://itunes.apple.com/app/id{iTunesId}");
 
             if (UIApplication.SharedApplication.CanOpenUrl(appUrl))
             {
