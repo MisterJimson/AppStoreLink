@@ -128,10 +128,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\AppStoreLink.UWP\AppStoreLink.UWP.csproj">
-      <Project>{24104597-d1c2-4cd1-b8f7-449ff0bcc613}</Project>
-      <Name>AppStoreLink.UWP</Name>
-    </ProjectReference>
     <ProjectReference Include="..\SampleApp\SampleApp.csproj">
       <Project>{eb645087-9262-47c2-872a-e86f1e06be2e}</Project>
       <Name>SampleApp</Name>

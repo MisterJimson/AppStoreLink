@@ -116,6 +116,14 @@
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Mj.AppStoreLink, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Mj.AppStoreLink.1.1.0\lib\Xamarin.iOS10\Mj.AppStoreLink.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Mj.AppStoreLink.Interface, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Mj.AppStoreLink.1.1.0\lib\Xamarin.iOS10\Mj.AppStoreLink.Interface.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -138,12 +146,6 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\AppStoreLink.iOS\AppStoreLink.iOS.csproj">
-      <Project>{05a3951a-4a50-47c0-97cc-adcc729ecf34}</Project>
-      <Name>AppStoreLink.iOS</Name>
-      <IsAppExtension>false</IsAppExtension>
-      <IsWatchApp>false</IsWatchApp>
-    </ProjectReference>
     <ProjectReference Include="..\SampleApp\SampleApp.csproj">
       <Project>{eb645087-9262-47c2-872a-e86f1e06be2e}</Project>
       <Name>SampleApp</Name>
