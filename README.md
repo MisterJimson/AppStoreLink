@@ -1,4 +1,21 @@
-# AppStoreLink
-A cross platform library to open the App Store or Google Play Store from shared Xamarin code.
+# Mj.AppStoreLink
+Simple cross platform librray that lets you link to the native store app on Android, iOS and UWP
 
+## Platforms
+* Android
+* iOS
+* Windows UWP
+
+## How To Use
+Using your Android package id, iTunes App Store id, and Window Store id we can open the native app store for each platform.
+
+Pass null for any platforms you don't support.
+
+```csharp
+AppStoreLinkService.Instance.OpenAppStorePage("com.google.android.googlequicksearchbox",
+                                              "284815942",
+                                              "9wzdncrfj2gk");
+```
+
+## Install
 Install from Nuget https://www.nuget.org/packages/Mj.AppStoreLink
