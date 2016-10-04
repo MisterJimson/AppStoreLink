@@ -36,8 +36,7 @@ namespace Mj.AppStoreLink
 
             try
             {
-                Application.Context.PackageManager.GetPackageInfo("com.android.vending", 0);
-                url = "market://details?id=" + packageName;
+                url = $"market://details?id={packageName}";
 
                 Intent intent = new Intent(Intent.ActionView, Uri.Parse(url));
                 intent.AddFlags(ActivityFlags.NewTask | ActivityFlags.ClearWhenTaskReset);
