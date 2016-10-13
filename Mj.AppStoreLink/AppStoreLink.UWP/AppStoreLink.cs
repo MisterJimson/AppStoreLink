@@ -6,7 +6,7 @@ namespace Mj.AppStoreLink
     {
         private string myWindowsStoreId;
 
-        public void Init(string myAndroidPackageName, string myiTunesId, string myWindowsStoreId = null)
+        public void Init(string myiTunesId, string myWindowsStoreId = null)
         {
             this.myWindowsStoreId = myWindowsStoreId;
         }

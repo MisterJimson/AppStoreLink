@@ -7,19 +7,15 @@ namespace Mj.AppStoreLink
 {
     public class AppStoreLink : IAppStoreLink
     {
-        private string myAndroidPackageName;
-
-        public void Init(string myAndroidPackageName, string myiTunesId, string myWindowsStoreId = null)
+        public void Init(string myiTunesId, string myWindowsStoreId = null)
         {
-            this.myAndroidPackageName = myAndroidPackageName;
+            //not needed for Android
         }
 
         public void OpenMyAppStorePage()
         {
-            if (myAndroidPackageName == null)
-                throw new ArgumentException($"{nameof(myAndroidPackageName)} is null, did you call init?");
-
-            OpenAppPage(this.myAndroidPackageName);
+            var packageName = Application.Context.PackageName;
+            OpenAppPage(packageName);
         }
 
         public void OpenAppStorePage(string androidPackageName, string iTunesId, string windowsStoreId = null)
@@ -32,24 +28,25 @@ namespace Mj.AppStoreLink
             if (string.IsNullOrEmpty(packageName))
                 return;
 
-            string url;
+            var url = $"market://details?id={packageName}";
 
-            try
+            Intent intent = new Intent(Intent.ActionView, Uri.Parse(url));
+            intent.AddFlags(ActivityFlags.NewTask | ActivityFlags.ClearWhenTaskReset);
+
+            //if there is an app store that can handle this request, use it.
+            //if not, use the browser
+            if (intent.ResolveActivity(Application.Context.PackageManager) != null)
             {
-                url = $"market://details?id={packageName}";
-
-                Intent intent = new Intent(Intent.ActionView, Uri.Parse(url));
-                intent.AddFlags(ActivityFlags.NewTask | ActivityFlags.ClearWhenTaskReset);
                 Application.Context.StartActivity(intent);
             }
-            catch (Exception e)
+            else
             {
                 url = "https://play.google.com/store/apps/details?id=" + packageName;
-            }
 
-            Intent fallbackIntent = new Intent(Intent.ActionView, Uri.Parse(url));
-            fallbackIntent.AddFlags(ActivityFlags.NewTask | ActivityFlags.ClearWhenTaskReset);
-            Application.Context.StartActivity(fallbackIntent);
+                Intent fallbackIntent = new Intent(Intent.ActionView, Uri.Parse(url));
+                fallbackIntent.AddFlags(ActivityFlags.NewTask | ActivityFlags.ClearWhenTaskReset);
+                Application.Context.StartActivity(fallbackIntent);
+            }
         }
     }
 }
