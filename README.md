@@ -9,7 +9,7 @@ Simple cross platform librray that lets you link to the native store app on Andr
 ## How To Use
 Using your Android package id, iTunes App Store id, and Window Store id we can open the native app store for each platform. We get the Android package id automatically, but need you to pass in the iTunes App Store id and the Windows Store id. Pass null for any platform you don't support.
 
-Init your store information first.
+Init your store information for the App Store and the Windows Store.
 ```csharp
 AppStoreLinkService.Instance.Init("284815942",
                                   "9wzdncrfj2gk");
